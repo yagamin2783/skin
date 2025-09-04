@@ -83,6 +83,7 @@ graph TD
 #### 前提条件
 - Docker Desktop
 - Git
+- GitHub
 
 #### リポジトリクローン
 ```bash
@@ -108,14 +109,17 @@ cd skin
 - [ ] 結果保存機能
 
 ### Phase 3（AWS本番環境）
-- [ ] VPC・セキュリティグループ設定
+- [〇] VPC・セキュリティグループ設定
 - [ ] EC2インスタンス構築（MySQL含む）
 - [ ] CloudFront 配信設定
 - [ ] Lambda 画像処理機能（オプション）
 - [ ] Route53 DNS設定
 
-## 🚀 デプロイ
-- [ ] AWSサービスでのデプロイ
+## EC2へのデプロイ準備等
+- [ ] EC2に接続
+- [ ]
+- [ ]
+- [ ]
 
 ## 🎯 ポートフォリオのポイント
 
@@ -138,3 +142,11 @@ cd skin
 
 **開発者**: [yagamin2783](https://github.com/yagamin2783)
 **プロジェクト**: ポートフォリオ用肌診断アプリ
+
+### 学べたこと
+・dockerの環境構築について
+・Laravelの基礎について
+・実務で経験してこなかった、GitHubの使用について
+・デプロイについて
+　参考サイト
+  https://qiita.com/kaino5454/items/bae4bca47e6f409e072f
