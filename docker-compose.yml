@@ -2,19 +2,22 @@ version: '3.8'
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: skin-app
     ports:
       - "8080:80"
-    environment:
-      APP_ENV: local
-      APP_DEBUG: "true"
     volumes:
       - ./src:/var/www/html
+      - ./config/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./config/php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - db
 
   db:
     image: mysql:8.0
+    container_name: skin-db
     environment:
       MYSQL_DATABASE: skin_analysis
       MYSQL_ROOT_PASSWORD: "UEsQr357!"

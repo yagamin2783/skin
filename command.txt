@@ -1,0 +1,14 @@
+# 最初に実行するコマンド
+
+# コンテナをビルドして起動
+docker-compose up -d
+
+# コンテナに入る
+docker exec -it skin-app bash
+
+# keyの生成
+php artisan key:generate
+
+# マイグレーションの実行
+php artisan session:table
+php artisan migrate
